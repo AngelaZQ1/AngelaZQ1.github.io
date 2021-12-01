@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Toolbar and Color Picker</title>
+</head>
+
+
+<body>
+    <script>
+        function show() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery-and-submit-painting.html">Gallery and Submit Your Painting</a></li>
+            <li><a href="./setting-up.html">Setting Up Your Document</a></li>
+            <li class="current-page"><a href="./layers-and-blend-modes.html">Layers and Blend Modes</a></li>
+            <li><a href="./brushes.html">Brushes</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="top-heading">
+        <div class="top-heading-content">
+            <h2>The Toolbar</h2>
+            <p class="bigger-paragraph">The toolbar is something that you will be familiar with if you have used any
+                Adobe programs. If you aren't familiar with the toolbar, that's alright! There are only a couple tools
+                that you should be familiar with.</p>
+        </div>
+    </div>
+
+    <div class="toolbar-section section">
+        <div class="toolbar-explanation">
+            <p class="toolbar-explanation">After you have created a document, you will see the toolbar on the left side
+                of your screen. The 4 main tools that I use while painting is the brush tool, color picker, freehand
+                selection tool, and the transform tool. The brush tool is used to put down and erase colors, the color
+                picker, well, picks colors, the freehand selection tool allows you to draw and a certain area on the
+                current layer, and the transform tool allows you to move and resize that selection.
+            </p>
+            <div class="toolbar-card shortcuts-card animate__animated animate__flipInX">
+                <h4>Shortcuts!</h4>
+                <div class="shortcuts-flexbox">
+                    <div class="shortcuts-key">
+                        <p>
+                            ctrl + z<br>
+                            ctrl + shift<br>
+                            b<br>
+                            e<br>
+                            ctrl + t
+                        </p>
+                    </div>
+                    <div class="shortcuts-function">
+                        <p>
+                            undo<br>
+                            redo<br>
+                            brush tool<br>
+                            brush ↔ eraser<br>
+                            color picker<br>
+                            free transform<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="toolbar-img" src="#" alt="Screenshot of toolbar">
+    </div>
+
+    <div class="color-picker-header wavy-header">
+        <div class="color-picker-content wavy-header-content">
+            <h2>The Color Picker</h2>
+            <p class="bigger-paragraph">The color picker is an essential part of digital painting. If you have never
+                painted digitally before, this is where you will be selecting colors to paint with.</p>
+        </div>
+    </div>
+
+    <div class="color-picker-section section">
+        <div class="color-picker-explanation">
+            <p>On the top right section of your screen, you will see a color picker, which is what you use to select
+                colors. By clicking on the small icon to the top left of the color picker, you can change the shape of
+                it. I personally like to use the second one, which has the hue on the outside and the saturation and
+                lightness of that hue on the inside.
+                <br><br>
+                One very useful shortcut is if you have the brush tool selected, holding down the Ctrl key will bring up
+                the color picker. You can click anywhere on your canvas and it will select the color that is on the
+                canvas, and releasing Ctrl will go back to the brush tool where you can paint with your newly selected
+                color.
+            </p>
+            <div class="color-picker-card shortcuts-card animate__animated animate__flipInX">
+                <h4>Shortcuts!</h4>
+                <div class="shortcuts-flexbox">
+                    <div class="shortcuts-key">
+                        <p>
+                            ctrl (hold)
+                        </p>
+                    </div>
+                    <div class="shortcuts-function">
+                        <p>
+                            color picker
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="color-picker-img" src="#" alt="Screenshot of color picker">
+    </div>
+
+    <div class="footer">
+        <div class="footer-links-container">
+            <a href="./index.html">Home</a>
+            <a href="./gallery-and-submit-painting.html">Gallery and Submit Your Painting</a>
+            <a href="./setting-up.html">Setting Up Your Document</a>
+            <a href="./toolbar-and-color-picker.html"><b>Toolbar and Color Picker</b></a>
+            <a href="./layers-and-blend-modes.html">Layers and Blend Modes</a>
+            <a href="./brushes.html">Brushes</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+</body>
+
+</html>

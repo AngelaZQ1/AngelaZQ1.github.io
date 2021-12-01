@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Setting Up Your Document</title>
+</head>
+
+<body>
+    <script>
+        function show() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery-and-submit-painting.html">Gallery and Submit Your Painting</a></li>
+            <li class="current-page"><a href="./setting-up.html">Setting Up Your Document</a></li>
+            <li><a href="./toolbar-and-color-picker.html">Toolbar and Color Picker</a></li>
+            <li><a href="./layers-and-blend-modes.html">Layers and Blend Modes</a></li>
+            <li><a href="./brushes.html">Brushes</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="top-heading">
+        <div class="top-heading-content">
+            <h2>Setting Up Your Document</h2>
+            <p class="bigger-paragraph">Before you start painting, the first thing you need to do is to set up a
+                document. It's pretty simple, so let's get started!</p>
+        </div>
+    </div>
+
+    <div class="setting-up section">
+        <p class="setting-up-explanation">When you first open Krita, you will be greeted by a screen with the option to
+            create a new file or open a file on the left. To create a new painting, click the new file button or press
+            Ctrl + N (or Cmd + N if you're on a Mac).
+            <br><br>
+            You will see a popup that allows you to change the size and resolution of your document. I like to use a
+            width of 2500px and a height of 1500px, along with a resolution of 300. You can set these values to whatever
+            you want, but larger dimensions give you more pixels to work with so that your painting won't look blurry if
+            you zoom in too far.
+            <br><br>
+            Additionally, if you plan on printing your painting later on, you should set the
+            resolution to 300ppi. Otherwise, 72 ppi is fine if you will only be viewing your painting on a screen.
+        </p>
+        <img class="setting-up-img" src="#" alt="Screenshot of new document page">
+    </div>
+    <div class="footer">
+        <div class="footer-links-container">
+            <a href="./index.html">Home</a>
+            <a href="./gallery-and-submit-painting.html">Gallery and Submit Your Painting</a>
+            <a href="./setting-up.html"><b>Setting Up Your Document</b></a>
+            <a href="./toolbar-and-color-picker.html">Toolbar and Color Picker</a>
+            <a href="./layers-and-blend-modes.html">Layers and Blend Modes</a>
+            <a href="./brushes.html">Brushes</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+</body>
+
+</html>

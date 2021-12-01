@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+    <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
+    <title>Gallery</title>
+</head>
+
+<body>
+    <!-- Youtube video showing sidebar animation: 
+    https://www.youtube.com/watch?v=rGAbT8ykGB0 -->
+    <script>
+        function show() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li class="current-page"><a href="./gallery-and-submit-painting.html">Gallery and Submit Your Painting</a></li>
+            <li><a href="./setting-up.html">Setting Up Your Document</a></li>
+            <li><a href="./toolbar-and-color-picker.html">Toolbar and Color Picker</a></li>
+            <li><a href="./layers-and-blend-modes.html">Layers and Blend Modes</a></li>
+            <li><a href="./brushes.html">Brushes</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="top-heading">
+        <div class="top-heading-content">
+            <h2>Submit Your Painting!</h2>
+            <p class="bigger-paragraph">Here, you have the opportunity to share your newly created painting with others
+                who are also starting out. Your painting doesn't have to match the demo painting. If you didn't paint
+                anything, scroll down to check out what others have done!</p>
+        </div>
+    </div>
+    <div class="keep-scrolling-and-form-container">
+        <div class="keep-scrolling-text-and-arrow-animation">
+            <p>Scroll down to see others' paintings!</p>
+            <img src="./images/arrow.png" alt="down arrow">
+        </div>
+        <form class="submit-painting-form">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name"><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email address"><br>
+
+            <label for="description">Description</label><br>
+            <input type="text" id="description" placeholder="Describe your painting"><br>
+
+            <label for="upload-painting">Upload your painting</label><br>
+            <input type="file" id="upload-painting" accept="image/png, image/jpeg, image/jpg"><br>
+
+            <!-- Animation is from https://webkul.github.io/micron/#interactions-preview -->
+            <input type="submit" id="submit-form" data-micron="tada">
+        </form>
+    </div>
+
+    <div class="gallery-header wavy-header">
+        <div class="gallery-content wavy-header-content">
+            <h2>Gallery</h2>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="row">
+            <div class="col">
+                <img src="./photos/aaron-blaise-13238969-10208845492949144-3479382933329324756-n.jpg" alt="">
+                <img src="./photos/aaron-blaise-tiger.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="./photos/alena-aenami-horizon-1k.jpg" alt="">
+                <img src="./photos/anton-fadeev-snowlandscape-wide.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="./photos/lara-kaminski-fuchs-reihe-1-2.jpg" alt="">
+                <img src="./photos/rossdraws-showdown-web.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

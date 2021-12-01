@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Brushes</title>
+</head>
+
+<body>
+    <script>
+        function show() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery-and-submit-painting.html">Gallery and Submit Your Painting</a></li>
+            <li><a href="./setting-up.html">Setting Up Your Document</a></li>
+            <li><a href="./toolbar-and-color-picker.html">Toolbar and Color Picker</a></li>
+            <li><a href="./layers-and-blend-modes.html">Layers and Blend Modes</a></li>
+            <li class="current-page"><a href="./brushes.html">Brushes</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="top-heading">
+        <div class="top-heading-content">
+            <h2>Brushes</h2>
+            <p class="bigger-paragraph">When painting, you will be using the brush tool for the majority of the time. In
+                the toolbar on the left side of the screen, the brush tool is indicated by the paintbrush icon. The
+                shortcut for the brush tool is B on your keyboard. </p>
+        </div>
+    </div>
+
+    <div class="brushes-section section">
+        <img class="brushes-img" src="#" alt="Screenshot of top panel">
+        <p class="brushes-explanation">At the top of your screen, there are 6 important buttons/settings to be aware of.
+            These are: edit your brush
+            settings, choose a brush preset, toggle on/off the eraser, change the opacity of your brush (or eraser), and
+            change the size of your brush (or eraser).
+        </p>
+    </div>
+
+    <div class="brushes-section1">
+        <h2>Brush Settings</h2>
+        <p>The first button is the "Edit brush settings" button. Note that you must have the brush tool selected to
+            press this button. Clicking this button brings up a menu that allows you to change several things about your
+            current brush, such as the size, angle, shape, and much more.
+            <br><br>
+            I do not use this menu often, but one thing that you may want to do is to select the checkbox at the bottom
+            left that says "Eraser switch size." With this option selected, whenever you are using this brush and you
+            switch to the eraser, it will remember the size of the eraser that you last used. For example, if you change
+            the size of your eraser and then switch back to the brush, the brush's size will not be the same as the
+            eraser's. This is helpful if you don't want your eraser to always be the same size as your brush.
+            <br><br>
+            Everything else in this menu is not necessary to learn. You can get a gist of what each setting does by
+            playing around with each setting and testing the brush out on the scratchpad to the right. You can learn
+            more about each setting on the official Krita documentation website
+            <a href="https://docs.krita.org/en/reference_manual/brushes/brush_settings.html" class="hover-underline-animation">here</a>.
+        </p>
+        <img src="#" alt="Image of brush settings">
+
+        <div class="toolbar-card shortcuts-card animate__animated animate__flipInX">
+            <h4>Shortcuts!</h4>
+            <div class="shortcuts-flexbox">
+                <div class="shortcuts-key">
+                    <p>
+                        b<br>
+                        e<br>
+                        [<br>
+                        ]<br>
+                        shift (hold and drag with mouse)
+                    </p>
+                </div>
+                <div class="shortcuts-function">
+                    <p>
+                        brush tool<br>
+                        brush ↔ eraser<br>
+                        decrease brush size<br>
+                        increase brush size<br>
+                        change brush size
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brushes-section2">
+        <h2>Brush Presets</h2>
+        <p>By default, Krita comes with a variety of brushes and erasers for you to try. There is everything from basic
+            round brushes to pencils to brushes that simulate real paintbrushes, to brushes that produce special
+            effects. You can also filter all the brushes by their category using the dropdown menu at the top. It takes
+            time to try different brushes to figure out what you like best, but I recommend starting out with the basic
+            opacity brush and basic eraser circle, which is what I use 99% of the time. </p>
+        <img src="#" alt="Image of brush presets">
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-links-container">
+            <a href="./index.html">Home</a>
+            <a href="./gallery-and-submit-painting.html">Gallery and Submit Your Painting</a>
+            <a href="./setting-up.html">Setting Up Your Document</a>
+            <a href="./toolbar-and-color-picker.html">Toolbar and Color Picker</a>
+            <a href="./layers-and-blend-modes.html">Layers and Blend Modes</a>
+            <a href="./brushes.html"><b>Brushes</b></a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+</body>
+
+</html>

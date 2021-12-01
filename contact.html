@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <script>
+        function show() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery-and-submit-painting.html">Gallery and Submit Your Painting</a></li>
+            <li><a href="./setting-up.html">Setting Up Your Document</a></li>
+            <li><a href="./toolbar-and-color-picker.html">Toolbar and Color Picker</a></li>
+            <li><a href="./layers-and-blend-modes.html">Layers and Blend Modes</a></li>
+            <li><a href="./brushes.html">Brushes</a></li>
+            <li class="current-page"><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="contact-form-container">
+        <form class="contact-form">
+            <h2>Got a Question?</h3>
+                <p>Feel free to ask any questions or give feedback!</p>
+
+                <label for="name">Name</label><br>
+                <input type="text"id="name" placeholder="Enter your name"><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your email address"><br>
+
+                <label for="description">Message</label><br>
+                <input type="text" id="description" placeholder="Message"><br>
+
+                <!-- Animation is from https://webkul.github.io/micron/#interactions-preview -->
+                <input type="submit" id="submit-form" data-micron="tada">
+        </form>
+    </div>
+
+    <div class="footer contact-footer">
+        <div class="footer-links-container">
+            <a href="./index.html">Home</a>
+            <a href="./gallery-and-submit-painting.html">Gallery and Submit Your Painting</a>
+            <a href="./setting-up.html">Setting Up Your Document</a>
+            <a href="./toolbar-and-color-picker.html">Toolbar and Color Picker</a>
+            <a href="./layers-and-blend-modes.html">Layers and Blend Modes</a>
+            <a href="./brushes.html">Brushes</a>
+            <a href="./contact.html"><b>Contact</b></a>
+        </div>
+    </div>
+</body>
+
+</html>

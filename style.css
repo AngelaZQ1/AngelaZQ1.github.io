@@ -1,0 +1,639 @@
+body, html {
+    font-family: Avenir;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    margin: 50px 0 80px 0;
+}
+
+.top-heading {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+}
+
+.top-heading-content {
+    text-align: center;
+    width: 700px;
+    color: white;
+}
+
+.top-heading-content h2, .wavy-header-content h2 {
+    font-size: 40px;
+    margin: 0;
+
+}
+
+.wavy-header {
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+}
+
+.wavy-header-content {
+    max-width: 75%;
+}
+
+.bigger-paragraph {
+    font-size: 20px;
+}
+
+/* Youtube video showing sidebar animation: 
+    https://www.youtube.com/watch?v=rGAbT8ykGB0 */
+
+#sidebar {
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    background: #242130;
+    left: -350px;
+    transition: .4s;
+    z-index: 100;
+}
+
+#sidebar ul {
+    padding: 0;
+    width: 350px;
+}
+
+#sidebar ul li {
+    list-style: none;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#sidebar a {
+    display: block;
+    color: rgb(181, 181, 181);
+    width: 100%;
+    padding: 20px 0;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+
+#sidebar li:hover {
+    background-color: #353144;
+}
+
+#sidebar .current-page a {
+    border-left: 2px solid #fc00ff;
+    color: white;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 380px;
+}
+
+.toggle-btn {
+    cursor: pointer;
+}
+
+.toggle-btn span {
+    width: 36px;
+    height: 6px;
+    display: block;
+    background: black;
+    margin-top: 6px;
+    border-radius: 10%/50%;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+/* home page */
+
+.hero {
+    height: 99vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+}
+
+.hero-content {
+    max-width: 70vw;
+    height: fit-content;
+    padding-bottom: 100px;
+}
+
+.hero-content h1 {
+    font-size: 120px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 25px;
+    font-weight: 500;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+/* Youtube video showing wave animation:
+  https://www.youtube.com/watch?v=MMNEEdGa5eE */
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: url(./images/Vector\ 1.png);
+    background-size: 1000px 100px;
+}
+
+.wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 10;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 9;
+    opacity: .5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.wave.wave3 {
+    animation: animate2 5s linear infinite;
+    z-index: 8;
+    opacity: .2;
+    animation-delay: -2s;
+    bottom: -10px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+/* home page - links section */
+
+.links-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.links-section p {
+    text-align: center;
+    max-width: 340px;
+    margin-right: 100px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links button {
+    width: 250px;
+    height: 50px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+
+.link1 {
+    background-color: #C853F7;
+}
+
+.link2 {
+    background-color: #8283EE;
+}
+
+.link3 {
+    background-color: #3796df;
+}
+
+.link4 {
+    background-color: #10b3c5;
+}
+
+/* home page - painting demo */
+
+.painting-demo-header {
+    margin-bottom: 100px;
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    width: 100%;
+}
+
+.painting-demo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.demo-section {
+    display: flex;
+    align-items: center;
+}
+
+.demo-section p {
+    max-width: 400px;
+}
+
+.demo-image {
+    width: 700px;
+    height: 500px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+/* home page - continue section */
+
+.continue-footer {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    color: white;
+    font-size: 22px;
+}
+
+.continue-footer p {
+    max-width: 700px;
+}
+
+.continue-footer button {
+    margin-bottom: 25px;
+}
+
+/* setting up page */
+
+.setting-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting-up-img {
+    width: 600px;
+    height: 500px;
+    padding-left: 20px;
+}
+
+.setting-up-explanation, .color-picker-explanation, .toolbar-explanation {
+    max-width: 500px;
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+.toolbar-section, .color-picker-section, .layers-section, .blend-modes-section {
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar-explanation, .color-picker-explanation, .layers-explanation, .blend-modes-explanation {
+    max-width: 600px;
+}
+
+.painting-demo-content p, .blend-modes-content p, .top-heading-content {
+    max-width: 700px;
+}
+
+.blend-modes-explanation a, .brushes-section1 a {
+    color: #d249d5;
+}
+
+/* https://www.30secondsofcode.org/css/s/hover-underline-animation */
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #d249d5;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #d249d5;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.blend-modes-header, .painting-demo-header, .gallery-header, .color-picker-header {
+    color: white;
+}
+
+.shortcuts-card {
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+    padding: 20px 50px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.shortcuts-card h4 {
+    font-size: larger;
+    margin: 5px 0;
+}
+
+.shortcuts-flexbox {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    line-height: 200%;
+}
+
+.shortcuts-key {
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+/* brushes page */
+
+.brushes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brushes-explanation, .color-picker-content {
+    max-width: 700px;
+}
+
+.brushes-card {
+    margin: 30px auto;
+}
+
+.brushes-section1, .brushes-section2 {
+    width: 60vw;
+    margin: auto;
+}
+
+.brushes-section1 img, .brushes-section2 img {
+    width: 60vw;
+    height: 700px;
+    margin: 20px auto;
+}
+
+.toolbar-img, .layers-img, .blend-modes-img, .brushes-img {
+    margin-left: 50px;
+}
+
+/* toolbar and color picker page */
+
+.color-picker-img {
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+}
+
+.footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(46, 44, 51);
+}
+
+.footer-links-container {
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a {
+    max-width: 600px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding: 0 15px;
+}
+
+.continue-button {
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+
+/* keep scrolling down arrow animation */
+
+.keep-scrolling-and-form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+}
+
+.keep-scrolling-text-and-arrow-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keep-scrolling-and-form-container img {
+    width: 80px;
+    margin-top: 20px;
+    padding-right: 10px;
+    animation: arrow-bounce 2s linear infinite;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes arrow-bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Submit painting form */
+
+.submit-painting-form {
+    width: 30vw;
+    border-radius: 5px;
+    margin-left: 100px;
+    padding: 50px;
+    box-shadow: 0px 0px 30px 7px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+input {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 2px solid rgb(233, 233, 233);
+}
+
+input:focus {
+    outline: none;
+}
+
+#upload-painting {
+    background: none;
+    border: none;
+    height: fit-content;
+    padding: 5px 0 0 0;
+}
+
+#description {
+    margin-bottom: 30px;
+    padding-bottom: 80px;
+}
+
+#submit-form {
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+form h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+form p {
+    text-align: center;
+    margin: 5px 0 40px 0;
+}
+
+/* Website used for animation:
+    https://animate.style */
+
+.animate__flipInX {
+    --animate-duration: 1s;
+}
+
+/* Gallery */
+
+.gallery-header {
+    font-size: 40px;
+    height: 200px;
+}
+
+/* contact page */
+
+.contact-form-container {
+    height: 100%;
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    display: flex;
+}
+
+.contact-form {
+    width: 30vw;
+    border-radius: 5px;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0px 0px 30px 7px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+
+/* Used W3Schools for Gallery:
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.col {
+    flex: 25%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .col {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

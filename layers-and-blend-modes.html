@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Layers and Blend Modes</title>
+</head>
+
+<body>
+    <script>
+        function show() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery-and-submit-painting.html">Gallery and Submit Your Painting</a></li>
+            <li><a href="./setting-up.html">Setting Up Your Document</a></li>
+            <li><a href="./toolbar-and-color-picker.html">Toolbar and Color Picker</a></li>
+            <li class="current-page"><a href="./layers-and-blend-modes.html" class="current-page">Layers and Blend Modes</a></li>
+            <li><a href="./brushes.html">Brushes</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="top-heading">
+        <div class="top-heading-content">
+            <h2>The Layers Panel</h2>
+            <p class="bigger-paragraph">The layers panel is something that differentiates digital painting from
+                traditional painting. With layers, you can paint over a layer while still being able to change it later
+                on. You can also create a new layer to experiment, and if you don't like what you did, you can
+                completely scrap it without affecting the rest of your painting.</p>
+        </div>
+    </div>
+
+    <div class="layers-section section">
+        <p class="layers-explanation">Unless you plan on painting everything on one layer, you should get to know the
+            layers panel. This panel is found on the bottom right corner of the screen. When you create a document, you
+            will have 2 layers labeled "Paint Layer 1" and "Background." The background layer is locked by default so
+            that
+            you don't accidentally erase the background when you just try to erase your lines.
+            <br><br>
+            Starting from the bottom left, the square with the circle in it allows you to create a new layer. The button
+            to the right allows you to duplicate the selected layer. The next two buttons are arrows that move the
+            selected layer up or down, but you can also do this by dragging the layer up or down with your mouse. You
+            dont need to worry about the slider icon. The far right icon deletes the selected layer.
+            <br><br>
+            Moving up, the icon that looks like an eye that sits to the left of each layer allows you to hide what is on
+            that layer. To the right of it, there is a small preview of what is on that layer. Then there is the name of
+            the layer which you can rename by double clicking it. Clicking the lock icon to the right of the name of the
+            layer prevents you from moving or painting on that layer.
+            <br><br>
+            The icon that looks like a cursive "a" is a little more complicated. It is difficult to explain, but it's
+            essentially Krita's version of a clipping mask in Photoshop. If there are several layers grouped together,
+            enabling the inherit alpha icon makes whatever is on that layer transparent if every layer below it is also
+            transparent in that location.
+            <br><br>
+            Above all of the layers is an opacity slider that changes the opacity of the selected layer.
+        </p>
+        <img class="layers-img" src="#" alt="Screenshot of layers panel">
+    </div>
+
+    <div class="blend-modes-header wavy-header">
+        <div class="blend-modes-content wavy-header-content">
+            <h2>Blend Modes</h2>
+            <p class="bigger-paragraph">Blend modes can be difficult to understand, and they are best learned by
+                experimenting. Essentially, blend modes change the way colors look depending on the colors of the layer
+                below it. </p>
+        </div>
+    </div>
+
+    <div class="blend-modes-section section">
+        <p class="blend-modes-explanation">At the top of the layers panel is a dropdown menu that allows you to change
+            the blend mode of the selected layer. Blend modes are a little complicated, but essentially, they change how
+            a layer appears based on the colors on the layer below it.
+            <br><br>
+            You can learn more about each blend mode on the official Krita documentation website by clicking <a
+                href="https://docs.krita.org/en/reference_manual/blending_modes.html" class="hover-underline-animation">here</a>, but
+            the two main ones that I use for digital painting are overlay and multiply. As shown in the painting demo, I
+            use overlay to lighten up the layers below it to paint light, and I use multiply to darken the layers below
+            it to create shadows.
+            <br><br>
+            I encourage you to play around with each blend mode to see what they do to the colors on a layer.
+        </p>
+        <img class="blend-modes-img" src="#" alt="Screenshot of blend modes">
+    </div>
+
+    <div class="footer">
+        <div class="footer-links-container">
+            <a href="./index.html">Home</a>
+            <a href="./gallery-and-submit-painting.html">Gallery and Submit Your Painting</a>
+            <a href="./setting-up.html">Setting Up Your Document</a>
+            <a href="./toolbar-and-color-picker.html">Toolbar and Color Picker</a>
+            <a href="./layers-and-blend-modes.html"><b>Layers and Blend Modes</b></a>
+            <a href="./brushes.html">Brushes</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+</body>
+
+</html>
