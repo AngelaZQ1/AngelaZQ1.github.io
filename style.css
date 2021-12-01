@@ -297,6 +297,7 @@ a {
 
 .continue-footer p {
     max-width: 700px;
+    text-align: center;
 }
 
 .continue-footer button {
