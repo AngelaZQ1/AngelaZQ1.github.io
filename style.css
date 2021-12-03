@@ -423,20 +423,27 @@ a {
     margin: 30px auto;
 }
 
-.brushes-section1, .brushes-section2 {
-    width: 60vw;
-    margin: auto;
-    border: 1px solid black;
+.brushes-section1 {
+    display: flex;
+    flex-direction: column;
 }
-.brushes-section1  {
+.brushes-section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 900px;
+    margin: 50px auto;
+}
+.brushes-section1-text, .brushes-section2-text  {
     width: 60vw;
     margin: auto;
-    border: 1px solid black;
+}
+.brushes-section1 img, .brushes-section2 img {
+    margin: 20px auto;
 }
 
-.brushes-section1 img, .brushes-section2 img {
-    display: block;
-    margin: 20px auto;
+.brushes-section2 img {
+    margin-left: 50px;
 }
 
 .toolbar-img, .layers-img, .blend-modes-img, .brushes-img {
