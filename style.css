@@ -307,18 +307,22 @@ a {
 /* setting up page */
 
 .setting-up {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
 
-.setting-up-img {
-    width: 600px;
-    height: 500px;
-    padding-left: 20px;
+.setting-up p {
+    width: 800px;
+    margin: 0 auto;
 }
 
-.setting-up-explanation, .color-picker-explanation, .toolbar-explanation {
+.setting-up img {
+    display: block;
+    max-width: 80%;
+    min-width: 800px;
+    margin: 30px auto;
+}
+
+.color-picker-explanation, .toolbar-explanation {
     max-width: 500px;
     padding-right: 20px;
     font-size: 16px;
@@ -399,6 +403,10 @@ a {
     font-weight: bold;
 }
 
+.toolbar-img {
+    max-width: 50px;
+}
+
 /* brushes page */
 
 .brushes-section {
@@ -418,24 +426,33 @@ a {
 .brushes-section1, .brushes-section2 {
     width: 60vw;
     margin: auto;
+    border: 1px solid black;
+}
+.brushes-section1  {
+    width: 60vw;
+    margin: auto;
+    border: 1px solid black;
 }
 
 .brushes-section1 img, .brushes-section2 img {
-    width: 60vw;
-    height: 700px;
+    display: block;
     margin: 20px auto;
 }
 
 .toolbar-img, .layers-img, .blend-modes-img, .brushes-img {
+    display: block;
+    max-width: 1200px;
     margin-left: 50px;
 }
 
 /* toolbar and color picker page */
 
 .color-picker-img {
-    width: 400px;
-    height: 400px;
-    margin-left: 50px;
+    display: block;
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
 }
 
 .footer {
@@ -443,7 +460,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:rgb(46, 44, 51);
+    background-color: rgb(46, 44, 51);
 }
 
 .footer-links-container {
