@@ -255,32 +255,53 @@ a {
 /* home page - painting demo */
 
 .painting-demo-header {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     background: linear-gradient(45deg, #00dbde, #fc00ff);
     width: 100%;
 }
 
-.painting-demo-section {
+.demo-main-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.demo-section {
+.painting-demo-step {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+}
+
+.painting-demo-mini-section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.demo-text {
+    width: 100%;
+}
+
+.painting-demo-mini-section img {
+    max-width: 100%;
+    max-height: 500px;
+    margin: 0 auto;
+}
+
+.shadow-and-light, .final-painting {
+    flex-direction: column;
     align-items: center;
 }
 
-.demo-section p {
-    max-width: 400px;
+.shadow-and-light .demo-text {
+    width: 100%;
 }
 
-.demo-image {
-    width: 700px;
-    height: 500px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+.so-far {
+    text-align: center;
 }
+
 
 /* home page - continue section */
 
