@@ -623,6 +623,10 @@ form p {
 
 /* Gallery */
 
+.gallery {
+    margin-bottom: 5px;
+}
+
 .gallery-header {
     font-size: 40px;
     height: 200px;
