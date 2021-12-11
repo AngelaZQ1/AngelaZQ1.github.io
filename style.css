@@ -473,6 +473,13 @@ a {
     margin-left: 50px;
 }
 
+/* layers page */
+
+.layers-explanation img {
+    height: 40px;
+    width: auto;
+}
+
 /* toolbar and color picker page */
 
 .color-picker-img {
